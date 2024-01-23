@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=wA/d=0/rs=AN8SPfq5gedF4FIOWZgYyMCNZA5tU966ig/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.0oiHOifUp7s.O/d=1/exm=el_conf/ed=1/rs=AN8SPfqhPH88PzyXEtTIBbMwzIqNmbrCbw/m=el_main"></script><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;box-sizing: content-box;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><link rel="stylesheet" href="https://code.jivosite.com/css/c23864d/widget.css" class="jv-css"><link rel="stylesheet" type="text/css" href="https://code.jivosite.com/css/c23864d/omnichannelMenu.widget.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartXssert</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div>
+      <img src="./images/salogo2.png" alt="logo" style="height: 100px; width: 400px; margin-right: auto;">
+    </div>
+  </header>
+   <!-- this section is for the sliding images -->
+   <section>
+      <div class="container">
+        <div class="w3-content w3-section" style="width:200px; height: 700px; margin:auto;" >
+          <img class="mySlides" src="./images/smart images/download (1).jpeg" style="width:100%; ">
+          <img class="mySlides" src="./images/smart images/images (1).jpeg" style="width:100%">
+          <img class="mySlides" src="./images/smart images/images (2).jpeg" style="width:100%">
+          <img class="mySlides" src="./images/smart images/images (3).jpeg" style="width:100%; ">
+          <img class="mySlides" src="./images/smart images/images (4).jpeg" style="width:100%">
+          <img class="mySlides" src="./images/smart images/images (5).jpeg" style="width:100%">
+          <!-- <img class="mySlides" src="./images/smart images/images (6).jpeg" style="width:100%; "> -->
+          <img class="mySlides" src="./images/smart images/images (7).jpeg" style="width:100%">
+          <img class="mySlides" src="./images/smart images/images (8).jpeg" style="width:100%">
+        </div>
+        <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+          </script>
+      </div>
+   </section> 
+   <!-- this section is for navigation bar -->
+   <section>
+        <div id="layout">
+            <div class="display-image">
+                <img src="./images/profilepic.png" alt="display image" style="height: 65px; width: 65px; border-radius: 100%; display: flex;">
+            </div>
+            <div class="welcome">
+              <!-- <h2> welcome back john doe</h2> -->
+              
+              <h2 class="animate__animated animate__backInLeft" style="padding-right: 50px;">welcome back john, Doe !!!</h2>
+              
+                
+            </div>
+
+        </div>
+
+   </section>
+ <!-- nav bar -->
+   <section>
+
+      <div class="navigation">
+        <div class="ms-2 fw-bold text-success" style="margin-right: auto;">
+          <span> LOGIN IP: 102.91.55.70 </span>
+          <span> Date: 17 Jan 2024</span>
+      </div>
+        <nav>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Account 
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./history.html">Transaction History</a></li>
+              <li><a class="dropdown-item" href="./me.html">Account information</a></li>
+              <li><a class="dropdown-item" href="./transfer.html">Transfer funds</a></li>
+              <li><a class="dropdown-item" href="./Add.html">Deposit</a></li>
+          
+
+            </ul>
+          </div>
+        </nav> 
+        <nav>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Applications
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./card.html">card</a></li>
+              <li><a class="dropdown-item" href="./Loan.html">Loan</a></li>
+              
+            </ul>
+          </div>
+        </nav>
+        <nav>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Settings
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./me.html">profile</a></li>
+              <li><a class="dropdown-item" href="./notification.html">Notification</a></li>
+              <li><a class="dropdown-item" href="./login.html">logout</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+   </section>
+   <section>
+    <div id="balance">
+      <div class="container-bal">
+        <p style="padding-left: 10px;"> Avialable balance</p>
+         <img src="./images/wallet.png" alt="" style="height: 70px; width: 70px; padding-left: 10px;" > </br>
+          <h1 style="padding-left: 10px;"> USD 12,134,356</h1>
+          <p style="color: red; " class=" animate__animated animate__flash"> Account status froozen</p>
+         <!-- <div class=" A-bal-">
+          <a  class="move-his" style="text-decoration: none; justify-content: right;" href="./history.html"> 
+            <h2 style="justify-content: right; text-decoration: none; font-family: Georgia, 'Times New Roman', Times, serif;">Transaction History</h2>
+          </a>
+         </div> -->
+    </div>
+    <div class=" add"  >
+      <div >
+        <a href="./history.html" style="text-decoration: none;">
+          <h3 style="color: aliceblue;"> Transaction history ></h3>
+       </a>
+      </div>
+      <div  class="display: flex; flex-direction: column mt-5;  ">
+        <div style="padding-top: 100px;">
+          <a href="./transfer.html">
+            <button type="button" class="btn btn-danger" style="height: 50px; width: 120px;"> Send Money</button>
+          </a>
+        <!-- </div>
+        <div> -->
+          <a href="./Add.html">
+            <button type="button" class="btn btn-success" style="height: 50px; width: 130px;"> Make Deposit</button>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="d-flex mt-5">
+        <a href="/user/dashboard/transfer" class="send-button text-cen p-1 cap d-flex rounded-pill p-3">
+            <div class="icon-holder rounded-circle bg-white">
+                <i class="text-danger fa fa-hand-holding-usd"></i>
+
+            </div>
+            <span class="text-white align-self-center p-2 ">
+                send money
+            </span>
+        </a>
+        <a href="/user/dashboard/deposit/options " class=" ms-1 deposit-button text-cen p-1 cap d-flex rounded-pill p-3">
+            <div class="icon-holder rounded-circle bg-white">
+                <i class="cap text-danger fa fa-piggy-bank"></i>
+            </div>
+            <span class="cap text-white align-self-center p-2 ">
+                make deposit
+            </span>
+        </a>
+    </div> -->
+
+
+      
+    </div>
+    
+   </section>
+   <!-- for transfer -->
+   <section>
+      <!-- <div class="container-trans">
+        <h3 style="color: black; justify-content: center;"> Transfer</h3>
+        <a href="./Add.html"> 
+          <img src="./images/add.png" alt="make deposit" style="height: 60px; width: 65px;">
+          Make deposit
+        </a>
+        <a href=""></a>
+
+      </div> -->
+
+      <div id="gridder">
+        <div class="kontainer">
+          <div class="zone green">
+             <h2 style="text-align: center;"> Transaction</h2>
+             <div>
+                <a href="./history.html" style="margin-right: auto;" class="p-5 text-center ">
+                  <img src="./images/smart icons/download (2).png" style= "color: blue;" alt="" >
+                  <p style="padding-left: 40px;">History</p>
+                  
+                </a>
+             </div>
+             <div>
+                <a href="./transfer.html" class="p-5 text-center ">
+                  <img class="width:25px; height:25px;" src="./images/smart icons/download (1).png" alt="" >
+                  <div class="text" style="padding-left: 40px;">Send Money</div>
+                </a>
+             </div>
+          </div> 
+          <div class="zone red" >
+            <h2 style="text-align: center;"> Deposit </h2>
+            <div >
+              <a href="./bitcoin.html" style=" display: inline-block; margin-right: 10px;"  > 
+                <img src="./images/smart icons/images(0).png" alt="history" style="justify-content: start;" >
+                <div class="text">Bitcoin</div>
+              </a>
+            </div>
+            <div class="p-4">
+              <a href="./depocard.html" >
+                <img class="width:25px; height:25px;" src="./images/smart icons/images.png" alt="history" >
+                <div class="text">card</div>
+              </a> </div>
+            
+          </div>
+          <div class="zone blue">        
+            <h2 style="text-align: center;"> Applications</h2>
+              <div><a href="./Loan.html" class="p-5 text-center ">
+                <img class="width:25px; height:25px;" src="./images/smart icons/download (2).png" alt="history" >
+                <div class="text" src="./Loan.html" style="padding-left: 40px;">Request Loan</div>
+              </a></div>
+          
+              <a href="./card.html" class="p-5 text-center ">
+                <img class="width:25px; height:25px;" src="./images/smart icons/images.png" alt="history" >
+                <div class="text" src="./card.html" style="padding-left: 40px;">Request Card</div>
+              </a> 
+          </div>
+          <div class="zone yellow">
+            <h2 style="text-align: center;"> Profile</h2>
+              <div>
+                <a href="./notification.html" class="p-5 text-center ">
+                  <img class="width:25px; height:25px;" src="./images/smart icons/download (3).png" alt="notification" >
+                  <div class="text" href="./notification.html" style="padding-left: 40px;" >Notification</div>
+                </a> </div>
+              
+              
+                <a href="./me.html" class="p-5 text-center ">
+                  <img class="width:35px; height:35px;"  src="./images/smart icons/download (4).png" alt="Settings" style="justify-content: center;" >
+                  <div class="text" src="./me.html" style="padding-left: 40px;">Settings</div>
+                </a>
+               
+          </div>
+        </div> 
+        <!-- <div>
+            <div class="text-center fw-bold fs-1"> Profile</div>
+              <div class="d-flex justify-content-between mt-3 " style="padding-bottom: 100px;" >
+                <a href="./notification.html" class="p-5 text-center ">
+                  <div>
+                    <div><i class="material-icons" style="font-size:100px;color:red">settings_applications</i></div>
+                    <div class="text center">Notification</div>
+                  </div>
+                </a>
+              
+
+                <a href="./me.html" class="p-5 text-center ">
+                  <div><i class="material-icons" style="font-size:100px;color:blue">settings_applications</i></div>
+                  <div class="text-center">Settings</div>
+
+                </a> 
+             </div>
+         </div> -->
+      </div>
+   </section>
+
+  <footer id="footer" style="color: black">
+    <div class="text-center" style=" padding-top: 50px; font-weight: bold;">
+
+      SmartAsset Advisors, LLC ("SmartAsset"), a wholly owned subsidiary of Financial Insight Technology, is registered with the U.S. Securities and Exchange Commission as an financial instituition.
+      Smartly made in NYC © 2024 SmartAsset, all rights reserved
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
