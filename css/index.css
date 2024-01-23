@@ -1,0 +1,270 @@
+/* 
+.header-container,
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    background-color: rgb(43, 43, 192);
+    flex-direction: row;
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    padding: 20px;
+}
+
+img{
+    height: 75px;
+    width: 75px;
+}
+
+
+body{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr ;
+    background-color: rgb(240, 240, 248);
+    position: fixed;
+}
+footer{
+    display: flex;
+    background-color: blue;
+    flex-direction: row;
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    text-align: justify;
+}
+
+.container.transfer{
+    display: flex;
+    background-color: rgb(150, 150, 150);
+    width: 970px;
+    margin: auto;
+    padding-top: 75px;
+}
+.container.others{
+    display: flex;
+    background-color: brown;
+    width: 970px;
+    margin: auto;
+    padding-top: 75px;
+}
+/* .logo{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-left: end;
+    justify-self: end;
+} */
+
+
+/* .profile_pic{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    text-align: end;
+
+}
+.notification{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+
+}
+h3{
+    text-align: center;
+    font: 1em sans-serif;
+    color: blue;
+}
+
+h3{
+    color: white;
+}
+section{
+    display: block;
+    padding-top: 75px;
+}
+
+
+*{
+    font-family: 'Bonheur Royale', cursive; 
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 20px;
+}
+a{
+    color: orange;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+
+}
+
+section{
+    display: block;
+    padding-top: 75px;
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+    padding-top: 25px;
+}  
+
+.container h3, .container h4{
+    margin: 20px 0;
+    text-align: center;
+
+}
+.container h3 {
+    font-size: 30px;
+    font-weight: bold;
+   
+}
+
+.container h4{
+    font-size: 15px;
+   
+}  */
+
+
+
+
+body{
+    display: grid;
+    grid-row: 10px;
+    grid-column: 10px;
+    grid-template-columns: 1fr;
+    background-color: blanchedalmond;
+    
+}
+
+
+header{
+    display: flex;
+    background-color: rgb(174, 174, 243);
+    width: 900px;
+    height: 90px;
+    text-align: center;
+    flex-direction: row;
+    margin: auto;
+
+}
+header img{
+    display: inline-block;
+
+}
+header #right{
+    display: inline-block;
+    margin-right: 25px;
+
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;  
+}
+h2{
+    text-align: center;
+}
+
+img {
+    height: 85px;
+    width: 100px;
+    border: 2px bisque;
+    border-radius: 20%;
+}
+#right{
+    float: inline-end;
+}
+.profile{
+    float: left;
+}
+
+.winger{
+    float: right;
+}
+.name{
+    text-align: center;
+}
+#centre{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 5px;
+    border-radius: 5%;
+}
+.container-transfer{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    background-color: rgb(174, 174, 243);
+    width: 900px;
+    height: 180px;
+    padding: 30px;
+
+}
+
+h4{
+    text-align: end;
+    color: green;;
+}
+.container-others{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    background-color:rgb(174, 174, 243);
+    width: 900px;
+    height: 180px;
+    padding: 30px;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(174, 174, 243);
+    width: 900px;
+    height: 90px;
+    padding: 30px;
+    
+}
+footer .menu-wrapper{
+    flex: 2;
+    line-height: 30px;
+    text-align: center;
+
+}
+footer nav ul{
+    margin-right: 20px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 35px;
+    font-size: larger;
+    margin-left: 35px;
+}
+.header-container{
+    flex: 2;
+}
+/* header,img, #righ{
+    text-align: right;
+    
+    width: 900px;
+} */
